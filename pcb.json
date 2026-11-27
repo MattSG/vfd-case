@@ -218,6 +218,82 @@
   },
   {
     "params": {
+      "operation": "new",
+      "body_name": "USB-C mouth tool",
+      "length": 8.34,
+      "height": 2.66,
+      "corner": [
+        10.86,
+        5.75,
+        3.7
+      ],
+      "name": "USB-C mouth tool",
+      "width": 6.75
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "name": "USB-C mouth rounding",
+      "tangent_chain": false,
+      "edges": [
+        [
+          10.86,
+          9.0,
+          3.7
+        ],
+        [
+          19.2,
+          9.0,
+          3.7
+        ],
+        [
+          10.86,
+          9.0,
+          6.36
+        ],
+        [
+          19.2,
+          9.0,
+          6.36
+        ]
+      ],
+      "radius": 1.3,
+      "body": "USB-C mouth tool"
+    },
+    "command": "solid.fillet"
+  },
+  {
+    "params": {
+      "name": "USB-C mouth",
+      "operation": "cut",
+      "tools": [
+        "USB-C mouth tool"
+      ],
+      "target": "USB-C"
+    },
+    "command": "solid.combine"
+  },
+  {
+    "params": {
+      "width": 5.85,
+      "operation": "join",
+      "targets": [
+        "USB-C"
+      ],
+      "height": 0.7,
+      "corner": [
+        11.685,
+        5.75,
+        4.68
+      ],
+      "name": "USB-C tongue",
+      "length": 6.69
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
       "height": 2.6,
       "corner": [
         6.9,

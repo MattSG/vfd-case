@@ -411,6 +411,37 @@
     }
   },
   {
+    "command": "solid.fillet",
+    "params": {
+      "radius": 1.9,
+      "edges": [
+        [
+          10.26,
+          11.0,
+          3.1
+        ],
+        [
+          19.8,
+          11.0,
+          3.1
+        ],
+        [
+          10.26,
+          11.0,
+          6.96
+        ],
+        [
+          19.8,
+          11.0,
+          6.96
+        ]
+      ],
+      "body": "Case",
+      "tangent_chain": false,
+      "name": "USB-C cutout rounding"
+    }
+  },
+  {
     "command": "solid.box",
     "params": {
       "width": 22.05,
