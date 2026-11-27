@@ -16,7 +16,7 @@
 | 4 | M3 × 16 button-head bolt, black (ISO 7380) | |
 | 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 mm hole | For example Ruthex RX-M3x5.7 |
 | 4 | M3 round spacer, 8 mm long, outside diameter ≤ 6 mm, unthreaded | Nylon is fine |
-| 4 | Ø8 mm self-adhesive rubber bumper, 2–3 mm tall | |
+| 4 | Ø6 × 2 mm self-adhesive rubber bumper | The common small round size, sold in big sheets |
 | 1 | USB-C cable | |
 
 You also need the clock PCB and the 1.8 mm tinted acrylic front panel that came with it.
@@ -58,7 +58,7 @@ Fit an M3 × 16 bolt through each corner, through the acrylic, spacer and PCB an
 ### 7. Rubber feet
 ![Step 7](guide/step-7-feet.png)
 
-Stick a bumper into each of the four recesses: two under the front and two under the back lip, either side of the cable notch.
+Stick a bumper into the recess in each corner of the base.
 
 ### 8. Cable
 ![Step 8](guide/step-8-cable.png)
