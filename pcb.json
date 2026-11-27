@@ -41,7 +41,7 @@
       ],
       "body": "PCB",
       "name": "PCB corners",
-      "radius": 1.75,
+      "radius": 2.12,
       "tangent_chain": false
     }
   },
