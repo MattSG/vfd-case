@@ -1,0 +1,374 @@
+[
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "Case"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Case"
+      ],
+      "component": "Case"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "Button cap"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Button pin"
+      ],
+      "component": "Button cap"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "Heat-set inserts"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Insert 1",
+        "Insert 2",
+        "Insert 3",
+        "Insert 4"
+      ],
+      "component": "Heat-set inserts"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "PCB assembly"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "PCB",
+        "VFD",
+        "VFD pins left",
+        "VFD pins main",
+        "VFD pins right",
+        "USB-C",
+        "Button casing",
+        "Button plunger"
+      ],
+      "component": "PCB assembly"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "Spacers"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Spacer 1",
+        "Spacer 2",
+        "Spacer 3",
+        "Spacer 4"
+      ],
+      "component": "Spacers"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "Acrylic front"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Acrylic"
+      ],
+      "component": "Acrylic front"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "Bolts"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Bolt 1",
+        "Bolt 2",
+        "Bolt 3",
+        "Bolt 4"
+      ],
+      "component": "Bolts"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "Rubber feet"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Pad 1",
+        "Pad 2",
+        "Pad 3",
+        "Pad 4"
+      ],
+      "component": "Rubber feet"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "params": {
+      "parent": "root",
+      "activate": false,
+      "name": "USB-C cable"
+    },
+    "command": "component.create"
+  },
+  {
+    "params": {
+      "bodies": [
+        "USB plug"
+      ],
+      "component": "USB-C cable"
+    },
+    "command": "component.move_bodies"
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Exploded",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            -11.591,
+            3.106
+          ],
+          "occurrence": "Heat-set inserts:1"
+        },
+        {
+          "translate": [
+            0.0,
+            0.0,
+            14.0
+          ],
+          "occurrence": "Button cap:1"
+        },
+        {
+          "translate": [
+            0.0,
+            -28.978,
+            7.765
+          ],
+          "occurrence": "PCB assembly:1"
+        },
+        {
+          "translate": [
+            0.0,
+            -44.433,
+            11.906
+          ],
+          "occurrence": "Spacers:1"
+        },
+        {
+          "translate": [
+            0.0,
+            -57.956,
+            15.529
+          ],
+          "occurrence": "Acrylic front:1"
+        },
+        {
+          "translate": [
+            0.0,
+            -77.274,
+            20.706
+          ],
+          "occurrence": "Bolts:1"
+        },
+        {
+          "translate": [
+            0.0,
+            0.0,
+            -10.0
+          ],
+          "occurrence": "Rubber feet:1"
+        },
+        {
+          "translate": [
+            0.0,
+            24.148,
+            -6.47
+          ],
+          "occurrence": "USB-C cable:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 1 inserts",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            -14.489,
+            3.882
+          ],
+          "occurrence": "Heat-set inserts:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 2 button",
+      "moves": [
+        {
+          "translate": [
+            0,
+            -28.98,
+            -2.0
+          ],
+          "occurrence": "Button cap:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 3 PCB",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            -27.046,
+            7.247
+          ],
+          "occurrence": "PCB assembly:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 4 spacers",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            -19.319,
+            5.176
+          ],
+          "occurrence": "Spacers:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 5 acrylic",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            -21.25,
+            5.694
+          ],
+          "occurrence": "Acrylic front:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 6 bolts",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            -24.148,
+            6.47
+          ],
+          "occurrence": "Bolts:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 7 feet",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            0.0,
+            -10.0
+          ],
+          "occurrence": "Rubber feet:1"
+        }
+      ]
+    }
+  },
+  {
+    "command": "explode.create",
+    "params": {
+      "name": "Step 8 cable",
+      "moves": [
+        {
+          "translate": [
+            0.0,
+            24.148,
+            -6.47
+          ],
+          "occurrence": "USB-C cable:1"
+        }
+      ]
+    }
+  }
+]
