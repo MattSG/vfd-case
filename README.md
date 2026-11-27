@@ -28,7 +28,7 @@ A desk case for the VFD clock, modelled in SolidCraft. The face tilts back 15° 
 | 4 | Ø8 self-adhesive rubber bumper, 2–3 mm tall | Sits in the recesses: two under the front, two under the back lip |
 
 ## Case
-- **Walls:** 2.4 mm.
+- **Walls:** 2.4 mm. Every exterior edge is rounded at R2: the front perimeter (rounding back from the face), all four front-view corners, the bottom edges and the lip. The 10 mm back cove is the one deliberate exception.
 - **Front:** a PCB-shaped pocket with 0.3 mm clearance and 2.42 mm corner radius. The acrylic sits flush with the front face.
 - **Back:** the USB-C port sits flush with the back face, through a 9.54 × 3.86 mm cutout.
 - **Button:** a single Ø7 push-cap that stands vertical, with a level top and a 0.4 mm dish. It comes straight out of a Ø7.4 bore in the sloped top, with no collar. It stands 0.5 mm proud at the front and 2.4 mm at the back. Inside, a hidden flange tilted parallel to the wall sits in a recess under the top and keeps the cap from falling out. Drop it in from inside before fitting the PCB. Nothing flexes.
