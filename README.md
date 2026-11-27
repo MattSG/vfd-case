@@ -26,7 +26,7 @@ Rebuild: run `pcb.json`, then `case.json`, into a new design. For example, with 
 - **Front:** a PCB-shaped pocket with 0.3 mm clearance and 2.42 mm corner radius. The acrylic sits flush with the front face.
 - **Back:** the USB-C port sits flush with the back face, through a 9.54 × 3.86 mm cutout.
 - **Button:** a separate printed push-pin with a Ø3 stem and Ø5 flange. The stem passes through a Ø3.4 hole in the top wall and stands 1 mm proud. The flange is held captive in a Ø5.6 recess underneath, 0.1 mm above the plunger. Drop the pin in before fitting the PCB. Nothing flexes.
-- **Base:** a wedge foot gives the 15° tilt and sits on a 3 mm lip, 40 mm deep, with 4 recesses for Ø8 rubber feet. A notch at the back lets the USB-C plug angle down. With the feet fitted, the plug clears the desk by 2.4 mm.
+- **Base:** a wedge foot gives the 15° tilt and stands 3 mm taller than the first version, with 4 recesses for Ø8 rubber feet. With the feet fitted, the USB-C plug clears the desk by 2.4 mm.
 
 ## Coordinates (PCB frame, before tilt; mm)
 - Z is up and the front (VFD side) faces −Y.

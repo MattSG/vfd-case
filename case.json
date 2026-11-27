@@ -915,7 +915,7 @@
     "command": "solid.box",
     "params": {
       "width": 120,
-      "height": 57.3,
+      "height": 54.3,
       "name": "Flat base",
       "operation": "cut",
       "targets": [
@@ -930,207 +930,140 @@
     }
   },
   {
-    "command": "solid.box",
     "params": {
-      "operation": "join",
-      "length": 99.2,
-      "height": 3,
-      "name": "Lip",
-      "corner": [
-        -2.7,
-        -14,
-        -5.7
-      ],
-      "targets": [
-        "Case"
-      ],
-      "width": 40
-    }
-  },
-  {
-    "command": "solid.fillet",
-    "params": {
-      "tangent_chain": false,
-      "body": "Case",
-      "edges": [
-        [
-          -2.7,
-          -14,
-          -4.2
-        ],
-        [
-          96.5,
-          -14,
-          -4.2
-        ],
-        [
-          -2.7,
-          26,
-          -4.2
-        ],
-        [
-          96.5,
-          26,
-          -4.2
-        ]
-      ],
-      "radius": 4,
-      "name": "Lip corners"
-    }
-  },
-  {
-    "command": "solid.box",
-    "params": {
-      "operation": "cut",
-      "length": 14,
-      "height": 3.2,
-      "name": "Cable notch",
-      "corner": [
-        8.03,
-        12.2,
-        -5.8
-      ],
-      "targets": [
-        "Case"
-      ],
-      "width": 15
-    }
-  },
-  {
-    "command": "solid.cylinder",
-    "params": {
-      "operation": "cut",
       "targets": [
         "Case"
       ],
       "axis": "Z",
-      "name": "Pad recess",
+      "operation": "cut",
       "diameter": 8.6,
+      "name": "Pad recess",
       "height": 1.1,
       "base": [
-        3.5,
-        -9,
+        7,
+        -6.5,
         -5.8
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
-    "command": "solid.cylinder",
     "params": {
-      "operation": "cut",
       "targets": [
         "Case"
       ],
       "axis": "Z",
-      "name": "Pad recess",
+      "operation": "cut",
       "diameter": 8.6,
+      "name": "Pad recess",
       "height": 1.1,
       "base": [
-        90.3,
-        -9,
+        86.8,
+        -6.5,
         -5.8
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
-    "command": "solid.cylinder",
     "params": {
-      "operation": "cut",
       "targets": [
         "Case"
       ],
       "axis": "Z",
-      "name": "Pad recess",
+      "operation": "cut",
       "diameter": 8.6,
+      "name": "Pad recess",
       "height": 1.1,
       "base": [
-        3.5,
-        20.5,
+        7,
+        6.5,
         -5.8
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
-    "command": "solid.cylinder",
     "params": {
-      "operation": "cut",
       "targets": [
         "Case"
       ],
       "axis": "Z",
-      "name": "Pad recess",
+      "operation": "cut",
       "diameter": 8.6,
+      "name": "Pad recess",
       "height": 1.1,
       "base": [
-        90.3,
-        20.5,
+        86.8,
+        6.5,
         -5.8
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
-    "command": "solid.cylinder",
     "params": {
+      "axis": "Z",
       "operation": "new",
-      "axis": "Z",
-      "name": "Pad 1",
+      "diameter": 8,
       "body_name": "Pad 1",
-      "diameter": 8,
+      "name": "Pad 1",
       "height": 2.5,
       "base": [
-        3.5,
-        -9,
+        7,
+        -6.5,
         -7.2
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
-    "command": "solid.cylinder",
     "params": {
-      "operation": "new",
       "axis": "Z",
-      "name": "Pad 2",
+      "operation": "new",
+      "diameter": 8,
       "body_name": "Pad 2",
-      "diameter": 8,
+      "name": "Pad 2",
       "height": 2.5,
       "base": [
-        90.3,
-        -9,
+        86.8,
+        -6.5,
         -7.2
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
-    "command": "solid.cylinder",
     "params": {
-      "operation": "new",
       "axis": "Z",
-      "name": "Pad 3",
+      "operation": "new",
+      "diameter": 8,
       "body_name": "Pad 3",
-      "diameter": 8,
+      "name": "Pad 3",
       "height": 2.5,
       "base": [
-        3.5,
-        20.5,
+        7,
+        6.5,
         -7.2
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
-    "command": "solid.cylinder",
     "params": {
-      "operation": "new",
       "axis": "Z",
-      "name": "Pad 4",
-      "body_name": "Pad 4",
+      "operation": "new",
       "diameter": 8,
+      "body_name": "Pad 4",
+      "name": "Pad 4",
       "height": 2.5,
       "base": [
-        90.3,
-        20.5,
+        86.8,
+        6.5,
         -7.2
       ]
-    }
+    },
+    "command": "solid.cylinder"
   },
   {
     "command": "appearance.assign",
@@ -1212,35 +1145,6 @@
   {
     "params": {
       "bodies": [
-        "Bolt 1",
-        "Bolt 2",
-        "Bolt 3",
-        "Bolt 4"
-      ],
-      "appearance": "starter.plastic.pom-black"
-    },
-    "command": "appearance.assign"
-  },
-  {
-    "params": {
-      "pbr": {
-        "metallic": 1,
-        "dielectric_ior": 1.5,
-        "roughness": 0.35
-      },
-      "color": "#c8a050",
-      "bodies": [
-        "Insert 1",
-        "Insert 2",
-        "Insert 3",
-        "Insert 4"
-      ]
-    },
-    "command": "appearance.assign"
-  },
-  {
-    "params": {
-      "bodies": [
         "Pad 1",
         "Pad 2",
         "Pad 3",
@@ -1256,6 +1160,27 @@
         "USB plug"
       ],
       "appearance": "starter.plastic.abs-charcoal"
+    },
+    "command": "appearance.assign"
+  },
+  {
+    "params": {
+      "pbr": {
+        "metallic": 1,
+        "roughness": 0.35,
+        "dielectric_ior": 1.5
+      },
+      "bodies": [
+        "Bolt 1",
+        "Bolt 2",
+        "Bolt 3",
+        "Bolt 4",
+        "Insert 1",
+        "Insert 2",
+        "Insert 3",
+        "Insert 4"
+      ],
+      "color": "#1c1c1e"
     },
     "command": "appearance.assign"
   }
