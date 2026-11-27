@@ -13,7 +13,8 @@ Rebuild: run `pcb.json`, then `case.json`, into a new design. For example, with 
 |---|---|---|
 | 4 | M3 × 16 button-head bolt (ISO 7380) | Goes from the front through the acrylic, spacer and PCB into the insert |
 | 4 | M3 round spacer, 8 mm long, OD ≤ 6 mm, unthreaded | Sits between the acrylic and the PCB, clearing the VFD by 1.75 mm |
-| 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 hole | Goes in the case bosses |
+| 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 hole | Goes in the case bosses. The thread is in the insert, so no nuts are needed |
+| 4 | Ø8 self-adhesive rubber bumper, 2–3 mm tall | Sits in the recesses under the lip |
 
 **Assembly:**
 1. Push the inserts into the bosses with a soldering iron.
@@ -25,7 +26,7 @@ Rebuild: run `pcb.json`, then `case.json`, into a new design. For example, with 
 - **Front:** a PCB-shaped pocket with 0.3 mm clearance and 2.42 mm corner radius. The acrylic sits flush with the front face.
 - **Back:** the USB-C port sits flush with the back face, through a 9.54 × 3.86 mm cutout.
 - **Button:** a separate printed push-pin with a Ø3 stem and Ø5 flange. The stem passes through a Ø3.4 hole in the top wall and stands 1 mm proud. The flange is held captive in a Ø5.6 recess underneath, 0.1 mm above the plunger. Drop the pin in before fitting the PCB. Nothing flexes.
-- **Base:** a flat base under a wedge foot, tilted 15°.
+- **Base:** a wedge foot gives the 15° tilt and sits on a 3 mm lip, 40 mm deep, with 4 recesses for Ø8 rubber feet. A notch at the back lets the USB-C plug angle down. With the feet fitted, the plug clears the desk by 2.4 mm.
 
 ## Coordinates (PCB frame, before tilt; mm)
 - Z is up and the front (VFD side) faces −Y.

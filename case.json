@@ -509,6 +509,366 @@
     }
   },
   {
+    "params": {
+      "base": [
+        3.1,
+        -8,
+        2.76
+      ],
+      "name": "Spacer bore 1",
+      "targets": [
+        "Spacer 1"
+      ],
+      "axis": "Y",
+      "diameter": 3.2,
+      "operation": "cut",
+      "height": 8
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        -11.45,
+        2.76
+      ],
+      "name": "Bolt 1",
+      "axis": "Y",
+      "diameter": 5.7,
+      "operation": "new",
+      "body_name": "Bolt 1",
+      "height": 1.65
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        -9.8,
+        2.76
+      ],
+      "name": "Bolt 1 shank",
+      "targets": [
+        "Bolt 1"
+      ],
+      "axis": "Y",
+      "diameter": 2.9,
+      "operation": "join",
+      "height": 16
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        1.6,
+        2.76
+      ],
+      "name": "Insert 1",
+      "axis": "Y",
+      "diameter": 4.0,
+      "operation": "new",
+      "body_name": "Insert 1",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        1.6,
+        2.76
+      ],
+      "name": "Insert 1 bore",
+      "targets": [
+        "Insert 1"
+      ],
+      "axis": "Y",
+      "diameter": 3.0,
+      "operation": "cut",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        -8,
+        2.76
+      ],
+      "name": "Spacer bore 2",
+      "targets": [
+        "Spacer 2"
+      ],
+      "axis": "Y",
+      "diameter": 3.2,
+      "operation": "cut",
+      "height": 8
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        -11.45,
+        2.76
+      ],
+      "name": "Bolt 2",
+      "axis": "Y",
+      "diameter": 5.7,
+      "operation": "new",
+      "body_name": "Bolt 2",
+      "height": 1.65
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        -9.8,
+        2.76
+      ],
+      "name": "Bolt 2 shank",
+      "targets": [
+        "Bolt 2"
+      ],
+      "axis": "Y",
+      "diameter": 2.9,
+      "operation": "join",
+      "height": 16
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        1.6,
+        2.76
+      ],
+      "name": "Insert 2",
+      "axis": "Y",
+      "diameter": 4.0,
+      "operation": "new",
+      "body_name": "Insert 2",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        1.6,
+        2.76
+      ],
+      "name": "Insert 2 bore",
+      "targets": [
+        "Insert 2"
+      ],
+      "axis": "Y",
+      "diameter": 3.0,
+      "operation": "cut",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        -8,
+        25.9
+      ],
+      "name": "Spacer bore 3",
+      "targets": [
+        "Spacer 3"
+      ],
+      "axis": "Y",
+      "diameter": 3.2,
+      "operation": "cut",
+      "height": 8
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        -11.45,
+        25.9
+      ],
+      "name": "Bolt 3",
+      "axis": "Y",
+      "diameter": 5.7,
+      "operation": "new",
+      "body_name": "Bolt 3",
+      "height": 1.65
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        -9.8,
+        25.9
+      ],
+      "name": "Bolt 3 shank",
+      "targets": [
+        "Bolt 3"
+      ],
+      "axis": "Y",
+      "diameter": 2.9,
+      "operation": "join",
+      "height": 16
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        1.6,
+        25.9
+      ],
+      "name": "Insert 3",
+      "axis": "Y",
+      "diameter": 4.0,
+      "operation": "new",
+      "body_name": "Insert 3",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        3.1,
+        1.6,
+        25.9
+      ],
+      "name": "Insert 3 bore",
+      "targets": [
+        "Insert 3"
+      ],
+      "axis": "Y",
+      "diameter": 3.0,
+      "operation": "cut",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        -8,
+        25.9
+      ],
+      "name": "Spacer bore 4",
+      "targets": [
+        "Spacer 4"
+      ],
+      "axis": "Y",
+      "diameter": 3.2,
+      "operation": "cut",
+      "height": 8
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        -11.45,
+        25.9
+      ],
+      "name": "Bolt 4",
+      "axis": "Y",
+      "diameter": 5.7,
+      "operation": "new",
+      "body_name": "Bolt 4",
+      "height": 1.65
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        -9.8,
+        25.9
+      ],
+      "name": "Bolt 4 shank",
+      "targets": [
+        "Bolt 4"
+      ],
+      "axis": "Y",
+      "diameter": 2.9,
+      "operation": "join",
+      "height": 16
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        1.6,
+        25.9
+      ],
+      "name": "Insert 4",
+      "axis": "Y",
+      "diameter": 4.0,
+      "operation": "new",
+      "body_name": "Insert 4",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "base": [
+        90.7,
+        1.6,
+        25.9
+      ],
+      "name": "Insert 4 bore",
+      "targets": [
+        "Insert 4"
+      ],
+      "axis": "Y",
+      "diameter": 3.0,
+      "operation": "cut",
+      "height": 5.7
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "length": 12.2,
+      "name": "USB plug",
+      "width": 25,
+      "corner": [
+        8.93,
+        12.25,
+        1.78
+      ],
+      "operation": "new",
+      "body_name": "USB plug",
+      "height": 6.5
+    },
+    "command": "solid.box"
+  },
+  {
     "command": "solid.move",
     "params": {
       "axis": [
@@ -531,7 +891,16 @@
         "Case",
         "Button casing",
         "Button plunger",
-        "Button pin"
+        "Button pin",
+        "Bolt 1",
+        "Insert 1",
+        "Bolt 2",
+        "Insert 2",
+        "Bolt 3",
+        "Insert 3",
+        "Bolt 4",
+        "Insert 4",
+        "USB plug"
       ],
       "angle": "-15 deg",
       "origin": [
@@ -557,6 +926,209 @@
         -20,
         -60,
         -60
+      ]
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "operation": "join",
+      "length": 99.2,
+      "height": 3,
+      "name": "Lip",
+      "corner": [
+        -2.7,
+        -14,
+        -5.7
+      ],
+      "targets": [
+        "Case"
+      ],
+      "width": 40
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "tangent_chain": false,
+      "body": "Case",
+      "edges": [
+        [
+          -2.7,
+          -14,
+          -4.2
+        ],
+        [
+          96.5,
+          -14,
+          -4.2
+        ],
+        [
+          -2.7,
+          26,
+          -4.2
+        ],
+        [
+          96.5,
+          26,
+          -4.2
+        ]
+      ],
+      "radius": 4,
+      "name": "Lip corners"
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "operation": "cut",
+      "length": 14,
+      "height": 3.2,
+      "name": "Cable notch",
+      "corner": [
+        8.03,
+        12.2,
+        -5.8
+      ],
+      "targets": [
+        "Case"
+      ],
+      "width": 15
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "axis": "Z",
+      "name": "Pad recess",
+      "diameter": 8.6,
+      "height": 1.1,
+      "base": [
+        3.5,
+        -9,
+        -5.8
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "axis": "Z",
+      "name": "Pad recess",
+      "diameter": 8.6,
+      "height": 1.1,
+      "base": [
+        90.3,
+        -9,
+        -5.8
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "axis": "Z",
+      "name": "Pad recess",
+      "diameter": 8.6,
+      "height": 1.1,
+      "base": [
+        3.5,
+        20.5,
+        -5.8
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "axis": "Z",
+      "name": "Pad recess",
+      "diameter": 8.6,
+      "height": 1.1,
+      "base": [
+        90.3,
+        20.5,
+        -5.8
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "new",
+      "axis": "Z",
+      "name": "Pad 1",
+      "body_name": "Pad 1",
+      "diameter": 8,
+      "height": 2.5,
+      "base": [
+        3.5,
+        -9,
+        -7.2
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "new",
+      "axis": "Z",
+      "name": "Pad 2",
+      "body_name": "Pad 2",
+      "diameter": 8,
+      "height": 2.5,
+      "base": [
+        90.3,
+        -9,
+        -7.2
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "new",
+      "axis": "Z",
+      "name": "Pad 3",
+      "body_name": "Pad 3",
+      "diameter": 8,
+      "height": 2.5,
+      "base": [
+        3.5,
+        20.5,
+        -7.2
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "new",
+      "axis": "Z",
+      "name": "Pad 4",
+      "body_name": "Pad 4",
+      "diameter": 8,
+      "height": 2.5,
+      "base": [
+        90.3,
+        20.5,
+        -7.2
       ]
     }
   },
@@ -636,5 +1208,55 @@
       ],
       "appearance": "starter.plastic.nylon-ivory"
     }
+  },
+  {
+    "params": {
+      "bodies": [
+        "Bolt 1",
+        "Bolt 2",
+        "Bolt 3",
+        "Bolt 4"
+      ],
+      "appearance": "starter.plastic.pom-black"
+    },
+    "command": "appearance.assign"
+  },
+  {
+    "params": {
+      "pbr": {
+        "metallic": 1,
+        "dielectric_ior": 1.5,
+        "roughness": 0.35
+      },
+      "color": "#c8a050",
+      "bodies": [
+        "Insert 1",
+        "Insert 2",
+        "Insert 3",
+        "Insert 4"
+      ]
+    },
+    "command": "appearance.assign"
+  },
+  {
+    "params": {
+      "bodies": [
+        "Pad 1",
+        "Pad 2",
+        "Pad 3",
+        "Pad 4"
+      ],
+      "appearance": "starter.plastic.tpu-matte-black"
+    },
+    "command": "appearance.assign"
+  },
+  {
+    "params": {
+      "bodies": [
+        "USB plug"
+      ],
+      "appearance": "starter.plastic.abs-charcoal"
+    },
+    "command": "appearance.assign"
   }
 ]
