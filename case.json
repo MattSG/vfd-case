@@ -1,0 +1,582 @@
+[
+  {
+    "command": "solid.box",
+    "params": {
+      "width": 1.8,
+      "height": 28.8,
+      "name": "Acrylic",
+      "operation": "new",
+      "body_name": "Acrylic",
+      "length": 93.8,
+      "corner": [
+        0,
+        -9.8,
+        0
+      ]
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "tangent_chain": false,
+      "edges": [
+        [
+          0,
+          -8.9,
+          0
+        ],
+        [
+          93.8,
+          -8.9,
+          0
+        ],
+        [
+          0,
+          -8.9,
+          28.8
+        ],
+        [
+          93.8,
+          -8.9,
+          28.8
+        ]
+      ],
+      "body": "Acrylic",
+      "radius": 2.12,
+      "name": "Acrylic corners"
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 3.2,
+      "targets": [
+        "Acrylic"
+      ],
+      "position": [
+        3.1,
+        -9.8,
+        2.76
+      ],
+      "name": "Acrylic hole"
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "body_name": "Spacer 1",
+      "height": 8,
+      "name": "Spacer 1",
+      "operation": "new",
+      "base": [
+        3.1,
+        -8,
+        2.76
+      ],
+      "axis": "Y",
+      "diameter": 6
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 3.2,
+      "targets": [
+        "Acrylic"
+      ],
+      "position": [
+        90.7,
+        -9.8,
+        2.76
+      ],
+      "name": "Acrylic hole"
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "body_name": "Spacer 2",
+      "height": 8,
+      "name": "Spacer 2",
+      "operation": "new",
+      "base": [
+        90.7,
+        -8,
+        2.76
+      ],
+      "axis": "Y",
+      "diameter": 6
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 3.2,
+      "targets": [
+        "Acrylic"
+      ],
+      "position": [
+        3.1,
+        -9.8,
+        25.9
+      ],
+      "name": "Acrylic hole"
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "body_name": "Spacer 3",
+      "height": 8,
+      "name": "Spacer 3",
+      "operation": "new",
+      "base": [
+        3.1,
+        -8,
+        25.9
+      ],
+      "axis": "Y",
+      "diameter": 6
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 3.2,
+      "targets": [
+        "Acrylic"
+      ],
+      "position": [
+        90.7,
+        -9.8,
+        25.9
+      ],
+      "name": "Acrylic hole"
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "body_name": "Spacer 4",
+      "height": 8,
+      "name": "Spacer 4",
+      "operation": "new",
+      "base": [
+        90.7,
+        -8,
+        25.9
+      ],
+      "axis": "Y",
+      "diameter": 6
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "width": 22.05,
+      "height": 34.2,
+      "name": "Case",
+      "operation": "new",
+      "body_name": "Case",
+      "length": 99.2,
+      "corner": [
+        -2.7,
+        -9.8,
+        -2.7
+      ]
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "tangent_chain": false,
+      "edges": [
+        [
+          -2.7,
+          1.2,
+          -2.7
+        ],
+        [
+          96.5,
+          1.2,
+          -2.7
+        ],
+        [
+          -2.7,
+          1.2,
+          31.5
+        ],
+        [
+          96.5,
+          1.2,
+          31.5
+        ]
+      ],
+      "body": "Case",
+      "radius": 4.82,
+      "name": "Case corners"
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "width": 19.75,
+      "height": 29.4,
+      "name": "Pocket",
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "length": 94.4,
+      "corner": [
+        -0.3,
+        -9.9,
+        -0.3
+      ]
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "tangent_chain": false,
+      "edges": [
+        [
+          -0.3,
+          0,
+          -0.3
+        ],
+        [
+          94.1,
+          0,
+          -0.3
+        ],
+        [
+          -0.3,
+          0,
+          29.1
+        ],
+        [
+          94.1,
+          0,
+          29.1
+        ]
+      ],
+      "body": "Case",
+      "radius": 2.42,
+      "name": "Pocket corners"
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "join",
+      "height": 8.3,
+      "name": "Boss",
+      "base": [
+        3.1,
+        1.6,
+        2.76
+      ],
+      "axis": "Y",
+      "targets": [
+        "Case"
+      ],
+      "diameter": 7
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "join",
+      "height": 8.3,
+      "name": "Boss",
+      "base": [
+        90.7,
+        1.6,
+        2.76
+      ],
+      "axis": "Y",
+      "targets": [
+        "Case"
+      ],
+      "diameter": 7
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "join",
+      "height": 8.3,
+      "name": "Boss",
+      "base": [
+        3.1,
+        1.6,
+        25.9
+      ],
+      "axis": "Y",
+      "targets": [
+        "Case"
+      ],
+      "diameter": 7
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "join",
+      "height": 8.3,
+      "name": "Boss",
+      "base": [
+        90.7,
+        1.6,
+        25.9
+      ],
+      "axis": "Y",
+      "targets": [
+        "Case"
+      ],
+      "diameter": 7
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 4.0,
+      "targets": [
+        "Case"
+      ],
+      "position": [
+        3.1,
+        1.6,
+        2.76
+      ],
+      "name": "Insert hole M3",
+      "depth": 6.0
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 4.0,
+      "targets": [
+        "Case"
+      ],
+      "position": [
+        90.7,
+        1.6,
+        2.76
+      ],
+      "name": "Insert hole M3",
+      "depth": 6.0
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 4.0,
+      "targets": [
+        "Case"
+      ],
+      "position": [
+        3.1,
+        1.6,
+        25.9
+      ],
+      "name": "Insert hole M3",
+      "depth": 6.0
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "diameter": 4.0,
+      "targets": [
+        "Case"
+      ],
+      "position": [
+        90.7,
+        1.6,
+        25.9
+      ],
+      "name": "Insert hole M3",
+      "depth": 6.0
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "width": 4,
+      "height": 3.86,
+      "name": "USB-C cutout",
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "length": 9.54,
+      "corner": [
+        10.26,
+        9.0,
+        3.1
+      ]
+    }
+  },
+  {
+    "params": {
+      "height": 2.8,
+      "corner": [
+        6.4,
+        -0.4,
+        28.9
+      ],
+      "operation": "cut",
+      "width": 0.8,
+      "length": 14.8,
+      "targets": [
+        "Case"
+      ],
+      "name": "Button slot front"
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "height": 2.8,
+      "corner": [
+        6.4,
+        4.8,
+        28.9
+      ],
+      "operation": "cut",
+      "width": 0.8,
+      "length": 14.8,
+      "targets": [
+        "Case"
+      ],
+      "name": "Button slot back"
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "height": 2.8,
+      "corner": [
+        6.4,
+        -0.4,
+        28.9
+      ],
+      "operation": "cut",
+      "width": 6.0,
+      "length": 0.8,
+      "targets": [
+        "Case"
+      ],
+      "name": "Button slot tip"
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "height": 1.2,
+      "corner": [
+        7.2,
+        0.4,
+        28.9
+      ],
+      "operation": "cut",
+      "width": 4.4,
+      "length": 14.0,
+      "targets": [
+        "Case"
+      ],
+      "name": "Button tongue thin"
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "targets": [
+        "Case"
+      ],
+      "diameter": 1.6,
+      "axis": "Z",
+      "operation": "join",
+      "height": 0.49,
+      "base": [
+        9.225,
+        2.6,
+        29.61
+      ],
+      "name": "Button nub"
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "width": 22.05,
+      "height": 17.3,
+      "name": "Foot",
+      "operation": "join",
+      "targets": [
+        "Case"
+      ],
+      "length": 89.56,
+      "corner": [
+        2.12,
+        -9.8,
+        -20
+      ]
+    }
+  },
+  {
+    "command": "solid.move",
+    "params": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "bodies": [
+        "PCB",
+        "VFD",
+        "VFD pins left",
+        "VFD pins main",
+        "VFD pins right",
+        "USB-C",
+        "Acrylic",
+        "Spacer 1",
+        "Spacer 2",
+        "Spacer 3",
+        "Spacer 4",
+        "Case",
+        "Button casing",
+        "Button plunger"
+      ],
+      "angle": "-15 deg",
+      "origin": [
+        0,
+        12.25,
+        -2.7
+      ],
+      "name": "Tilt"
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "width": 120,
+      "height": 57.3,
+      "name": "Flat base",
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "length": 140,
+      "corner": [
+        -20,
+        -60,
+        -60
+      ]
+    }
+  }
+]

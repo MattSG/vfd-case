@@ -215,5 +215,37 @@
       "radius": 1.6,
       "tangent_chain": false
     }
+  },
+  {
+    "params": {
+      "height": 2.6,
+      "corner": [
+        6.9,
+        1.6,
+        25.78
+      ],
+      "body_name": "Button casing",
+      "operation": "new",
+      "width": 2.0,
+      "length": 4.65,
+      "name": "Button casing"
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "height": 0.98,
+      "corner": [
+        8.25,
+        2.125,
+        28.38
+      ],
+      "body_name": "Button plunger",
+      "operation": "new",
+      "width": 0.95,
+      "length": 1.95,
+      "name": "Button plunger"
+    },
+    "command": "solid.box"
   }
 ]
