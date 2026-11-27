@@ -837,11 +837,11 @@
   },
   {
     "params": {
-      "diameter": 10,
+      "diameter": 9.6,
       "body_name": "Recess tool",
-      "height": 1.5,
+      "height": 1.6,
       "base": [
-        9.225,
+        10.3,
         2.6,
         28.9
       ],
@@ -855,7 +855,7 @@
     "params": {
       "width": 12,
       "corner": [
-        5.6,
+        10.9,
         -3.4,
         28.8
       ],
@@ -865,7 +865,7 @@
       ],
       "name": "Recess trim",
       "operation": "intersect",
-      "length": 14.4
+      "length": 10
     },
     "command": "solid.box"
   },
@@ -887,14 +887,46 @@
       "body_name": "Flange slab tool",
       "name": "Flange slab tool",
       "operation": "new",
-      "length": 10.225,
+      "length": 10,
       "corner": [
-        6.0,
+        11.3,
         -4.4,
-        29.4
+        29.6
       ],
-      "height": 0.6
+      "height": 0.5
     }
+  },
+  {
+    "params": {
+      "body_name": "Stem trim tool",
+      "name": "Stem trim tool",
+      "height": 2,
+      "operation": "new",
+      "width": 8,
+      "length": 8,
+      "corner": [
+        5.225,
+        -1.4,
+        27.51
+      ]
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "operation": "new",
+      "corner": [
+        7.725,
+        -10.5,
+        29.0
+      ],
+      "body_name": "Groove tool",
+      "length": 3.0,
+      "width": 12.6,
+      "height": 0.65,
+      "name": "Groove tool"
+    },
+    "command": "solid.box"
   },
   {
     "command": "solid.move",
@@ -929,7 +961,9 @@
         "Insert 4",
         "USB plug",
         "USB notch tool",
-        "Flange slab tool"
+        "Flange slab tool",
+        "Stem trim tool",
+        "Groove tool"
       ],
       "angle": "-15 deg",
       "origin": [
@@ -969,7 +1003,7 @@
         "Case"
       ],
       "base": [
-        9.225,
+        10.3,
         11.227,
         29.0
       ],
@@ -987,9 +1021,9 @@
       "base": [
         9.225,
         11.227,
-        30.95
+        30.4
       ],
-      "height": 0.6
+      "height": 1.2
     }
   },
   {
@@ -1003,7 +1037,7 @@
         "Button pin"
       ],
       "base": [
-        9.225,
+        10.3,
         11.227,
         31.0
       ],
@@ -1018,7 +1052,7 @@
       "name": "Button cap edge",
       "edges": [
         [
-          9.225,
+          10.3,
           14.727,
           34.4
         ]
@@ -1032,7 +1066,7 @@
       "radius": 10,
       "name": "Button dish",
       "center": [
-        9.225,
+        10.3,
         11.227,
         44.1
       ],
@@ -1045,12 +1079,12 @@
     "command": "solid.cylinder",
     "params": {
       "axis": "Z",
-      "diameter": 8.6,
+      "diameter": 8.8,
       "name": "Flange tmp",
       "operation": "new",
       "body_name": "Flange tmp",
       "base": [
-        9.225,
+        10.3,
         11.227,
         29.0
       ],
@@ -1078,6 +1112,17 @@
         "Flange tmp"
       ]
     }
+  },
+  {
+    "params": {
+      "name": "Stem trim",
+      "target": "Button pin",
+      "operation": "cut",
+      "tools": [
+        "Stem trim tool"
+      ]
+    },
+    "command": "solid.combine"
   },
   {
     "command": "solid.box",
@@ -1189,6 +1234,17 @@
       "name": "Front edge"
     },
     "command": "solid.fillet"
+  },
+  {
+    "params": {
+      "name": "Plunger groove",
+      "target": "Case",
+      "tools": [
+        "Groove tool"
+      ],
+      "operation": "cut"
+    },
+    "command": "solid.combine"
   },
   {
     "command": "solid.cylinder",
