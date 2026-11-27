@@ -194,16 +194,6 @@
         [
           -2.7,
           1.2,
-          -2.7
-        ],
-        [
-          96.5,
-          1.2,
-          -2.7
-        ],
-        [
-          -2.7,
-          1.2,
           31.5
         ],
         [
@@ -500,9 +490,9 @@
       "targets": [
         "Case"
       ],
-      "length": 89.56,
+      "length": 99.2,
       "corner": [
-        2.12,
+        -2.7,
         -9.8,
         -20
       ]
@@ -869,6 +859,22 @@
     "command": "solid.box"
   },
   {
+    "command": "solid.box",
+    "params": {
+      "operation": "new",
+      "length": 14,
+      "height": 40.3,
+      "name": "USB notch tool",
+      "body_name": "USB notch tool",
+      "width": 48,
+      "corner": [
+        8.03,
+        12.25,
+        -30
+      ]
+    }
+  },
+  {
     "command": "solid.move",
     "params": {
       "axis": [
@@ -900,7 +906,8 @@
         "Insert 3",
         "Bolt 4",
         "Insert 4",
-        "USB plug"
+        "USB plug",
+        "USB notch tool"
       ],
       "angle": "-15 deg",
       "origin": [
@@ -930,140 +937,221 @@
     }
   },
   {
+    "command": "solid.box",
     "params": {
+      "operation": "join",
+      "length": 99.2,
+      "height": 3,
+      "name": "Back lip",
       "targets": [
         "Case"
       ],
-      "axis": "Z",
+      "width": 23.25,
+      "corner": [
+        -2.7,
+        11.0,
+        -5.7
+      ]
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "name": "Back cove",
+      "radius": 10,
+      "tangent_chain": false,
+      "body": "Case",
+      "edges": [
+        [
+          46.9,
+          12.25,
+          -2.7
+        ]
+      ]
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "name": "Lip corners",
+      "radius": 4,
+      "tangent_chain": false,
+      "body": "Case",
+      "edges": [
+        [
+          -2.7,
+          34.25,
+          -4.2
+        ],
+        [
+          96.5,
+          34.25,
+          -4.2
+        ]
+      ]
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "name": "Lip edge",
+      "radius": 1.5,
+      "body": "Case",
+      "edges": [
+        [
+          46.9,
+          34.25,
+          -2.7
+        ]
+      ]
+    }
+  },
+  {
+    "command": "solid.combine",
+    "params": {
+      "name": "USB notch",
       "operation": "cut",
+      "tools": [
+        "USB notch tool"
+      ],
+      "target": "Case"
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "operation": "cut",
+      "height": 1.1,
+      "axis": "Z",
       "diameter": 8.6,
       "name": "Pad recess",
-      "height": 1.1,
+      "targets": [
+        "Case"
+      ],
       "base": [
-        7,
+        3.0,
         -6.5,
         -5.8
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
+    "command": "solid.cylinder",
     "params": {
+      "operation": "cut",
+      "height": 1.1,
+      "axis": "Z",
+      "diameter": 8.6,
+      "name": "Pad recess",
       "targets": [
         "Case"
       ],
-      "axis": "Z",
-      "operation": "cut",
-      "diameter": 8.6,
-      "name": "Pad recess",
-      "height": 1.1,
       "base": [
-        86.8,
+        90.8,
         -6.5,
         -5.8
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
+    "command": "solid.cylinder",
     "params": {
+      "operation": "cut",
+      "height": 1.1,
+      "axis": "Z",
+      "diameter": 8.6,
+      "name": "Pad recess",
       "targets": [
         "Case"
       ],
-      "axis": "Z",
-      "operation": "cut",
-      "diameter": 8.6,
-      "name": "Pad recess",
-      "height": 1.1,
       "base": [
-        7,
-        6.5,
+        3.0,
+        29,
         -5.8
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
+    "command": "solid.cylinder",
     "params": {
+      "operation": "cut",
+      "height": 1.1,
+      "axis": "Z",
+      "diameter": 8.6,
+      "name": "Pad recess",
       "targets": [
         "Case"
       ],
-      "axis": "Z",
-      "operation": "cut",
-      "diameter": 8.6,
-      "name": "Pad recess",
-      "height": 1.1,
       "base": [
-        86.8,
-        6.5,
+        90.8,
+        29,
         -5.8
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
+    "command": "solid.cylinder",
     "params": {
-      "axis": "Z",
       "operation": "new",
+      "height": 2.5,
+      "axis": "Z",
       "diameter": 8,
-      "body_name": "Pad 1",
       "name": "Pad 1",
-      "height": 2.5,
+      "body_name": "Pad 1",
       "base": [
-        7,
+        3.0,
         -6.5,
         -7.2
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
+    "command": "solid.cylinder",
     "params": {
-      "axis": "Z",
       "operation": "new",
+      "height": 2.5,
+      "axis": "Z",
       "diameter": 8,
-      "body_name": "Pad 2",
       "name": "Pad 2",
-      "height": 2.5,
+      "body_name": "Pad 2",
       "base": [
-        86.8,
+        90.8,
         -6.5,
         -7.2
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
+    "command": "solid.cylinder",
     "params": {
-      "axis": "Z",
       "operation": "new",
+      "height": 2.5,
+      "axis": "Z",
       "diameter": 8,
-      "body_name": "Pad 3",
       "name": "Pad 3",
-      "height": 2.5,
+      "body_name": "Pad 3",
       "base": [
-        7,
-        6.5,
+        3.0,
+        29,
         -7.2
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
+    "command": "solid.cylinder",
     "params": {
-      "axis": "Z",
       "operation": "new",
-      "diameter": 8,
-      "body_name": "Pad 4",
-      "name": "Pad 4",
       "height": 2.5,
+      "axis": "Z",
+      "diameter": 8,
+      "name": "Pad 4",
+      "body_name": "Pad 4",
       "base": [
-        86.8,
-        6.5,
+        90.8,
+        29,
         -7.2
       ]
-    },
-    "command": "solid.cylinder"
+    }
   },
   {
     "command": "appearance.assign",
