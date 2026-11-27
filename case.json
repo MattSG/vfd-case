@@ -805,6 +805,40 @@
     }
   },
   {
+    "command": "solid.cylinder",
+    "params": {
+      "axis": "Z",
+      "diameter": 10,
+      "name": "Button recess",
+      "operation": "cut",
+      "targets": [
+        "Case"
+      ],
+      "base": [
+        9.225,
+        2.6,
+        28.9
+      ],
+      "height": 1.4
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "width": 14,
+      "body_name": "Flange slab tool",
+      "name": "Flange slab tool",
+      "operation": "new",
+      "length": 14,
+      "corner": [
+        2.225,
+        -4.4,
+        29.4
+      ],
+      "height": 0.8
+    }
+  },
+  {
     "command": "solid.move",
     "params": {
       "axis": [
@@ -836,7 +870,8 @@
         "Bolt 4",
         "Insert 4",
         "USB plug",
-        "USB notch tool"
+        "USB notch tool",
+        "Flange slab tool"
       ],
       "angle": "-15 deg",
       "origin": [
@@ -868,154 +903,123 @@
   {
     "command": "solid.cylinder",
     "params": {
-      "base": [
-        9.225,
-        11.227,
-        31.5
-      ],
+      "axis": "Z",
+      "diameter": 7.4,
+      "name": "Button bore",
+      "operation": "cut",
       "targets": [
         "Case"
       ],
-      "operation": "join",
-      "height": 3.5,
-      "name": "Button collar",
-      "axis": "Z",
-      "diameter": 12
-    }
-  },
-  {
-    "command": "solid.fillet",
-    "params": {
-      "body": "Case",
-      "edges": [
-        [
-          9.225,
-          17.227,
-          35.0
-        ]
-      ],
-      "radius": 0.35,
-      "name": "Collar edge"
-    }
-  },
-  {
-    "command": "solid.cylinder",
-    "params": {
       "base": [
         9.225,
         11.227,
         29.0
       ],
-      "targets": [
-        "Case"
-      ],
-      "operation": "cut",
-      "height": 3.3,
-      "name": "Button recess",
-      "axis": "Z",
-      "diameter": 9.4
+      "height": 7
     }
   },
   {
     "command": "solid.cylinder",
     "params": {
-      "base": [
-        9.225,
-        11.227,
-        32.2
-      ],
-      "targets": [
-        "Case"
-      ],
-      "operation": "cut",
-      "height": 4,
-      "name": "Button bore",
       "axis": "Z",
-      "diameter": 7.4
-    }
-  },
-  {
-    "command": "solid.cylinder",
-    "params": {
+      "diameter": 3.0,
+      "name": "Button pin",
+      "operation": "new",
+      "body_name": "Button pin",
       "base": [
         9.225,
         11.227,
         30.95
       ],
-      "operation": "new",
-      "height": 0.5,
-      "name": "Button pin",
-      "body_name": "Button pin",
-      "axis": "Z",
-      "diameter": 3.0
+      "height": 0.6
     }
   },
   {
     "command": "solid.cylinder",
     "params": {
-      "base": [
-        9.225,
-        11.227,
-        31.4
-      ],
-      "targets": [
-        "Button pin"
-      ],
-      "operation": "join",
-      "height": 0.6,
-      "name": "Button flange",
       "axis": "Z",
-      "diameter": 8.6
-    }
-  },
-  {
-    "command": "solid.cylinder",
-    "params": {
-      "base": [
-        9.225,
-        11.227,
-        32.0
-      ],
-      "targets": [
-        "Button pin"
-      ],
-      "operation": "join",
-      "height": 4.8,
+      "diameter": 7.0,
       "name": "Button cap",
-      "axis": "Z",
-      "diameter": 7.0
+      "operation": "join",
+      "targets": [
+        "Button pin"
+      ],
+      "base": [
+        9.225,
+        11.227,
+        31.0
+      ],
+      "height": 4.4
     }
   },
   {
     "command": "solid.fillet",
     "params": {
       "body": "Button pin",
+      "radius": 0.5,
+      "name": "Button cap edge",
       "edges": [
         [
           9.225,
           14.727,
-          36.8
+          35.4
         ]
-      ],
-      "radius": 0.5,
-      "name": "Button cap edge"
+      ]
     }
   },
   {
+    "command": "solid.sphere",
     "params": {
+      "operation": "cut",
       "radius": 10,
+      "name": "Button dish",
       "center": [
         9.225,
         11.227,
-        46.4
+        45.0
       ],
-      "name": "Button dish",
       "targets": [
         "Button pin"
+      ]
+    }
+  },
+  {
+    "command": "solid.cylinder",
+    "params": {
+      "axis": "Z",
+      "diameter": 8.6,
+      "name": "Flange tmp",
+      "operation": "new",
+      "body_name": "Flange tmp",
+      "base": [
+        9.225,
+        11.227,
+        29.0
       ],
-      "operation": "cut"
-    },
-    "command": "solid.sphere"
+      "height": 5
+    }
+  },
+  {
+    "command": "solid.combine",
+    "params": {
+      "operation": "intersect",
+      "name": "Flange shape",
+      "target": "Flange tmp",
+      "tools": [
+        "Flange slab tool"
+      ]
+    }
+  },
+  {
+    "command": "solid.combine",
+    "params": {
+      "operation": "join",
+      "name": "Button flange",
+      "target": "Button pin",
+      "tools": [
+        "Flange tmp"
+      ]
+    }
   },
   {
     "command": "solid.box",
