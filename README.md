@@ -2,11 +2,22 @@
 
 A desk case for the VFD clock, modelled in SolidCraft. The face tilts back 15° toward the viewer.
 
-- `pcb.json`: script for the PCB reference model.
-- `case.json`: script for the case. It also adds the acrylic and spacers as reference parts, then tilts everything.
-- `vfd-case.sc`: the full saved design.
+![Assembled](guide/assembled.png)
 
-Rebuild: run `pcb.json`, then `case.json`, into a new design. For example, with two MCP `batch` calls using `path`.
+**Build it:** see [ASSEMBLY.md](ASSEMBLY.md) for parts, print settings and the illustrated step-by-step guide.
+
+| Path | What |
+|---|---|
+| `print/case.3mf`, `print/button-cap.3mf` | The two printed parts |
+| `export/vfd-case-assembly.step` | The full assembly for other CAD tools |
+| `export/vfd-case-assembly.glb` | The full assembly with colours, for viewers |
+| `guide/` | Assembly renders |
+| `vfd-case.sc` | The SolidCraft design, with components and explode views |
+| `pcb.json` | Script for the PCB reference model |
+| `case.json` | Script for the case, acrylic, spacers, hardware and plug. It also applies the tilt and colours |
+| `assembly.json` | Groups the bodies into components and creates the explode views (`Exploded` and `Step 1`–`Step 8`) |
+
+**Rebuild:** run `pcb.json`, then `case.json`, then `assembly.json` into a new design. For example, with three MCP `batch` calls using `path`. Then re-export with `export` and re-render the guide.
 
 ## Hardware (all standard metric)
 | Qty | Part | Notes |
@@ -14,12 +25,7 @@ Rebuild: run `pcb.json`, then `case.json`, into a new design. For example, with 
 | 4 | M3 × 16 button-head bolt (ISO 7380) | Goes from the front through the acrylic, spacer and PCB into the insert |
 | 4 | M3 round spacer, 8 mm long, OD ≤ 6 mm, unthreaded | Sits between the acrylic and the PCB, clearing the VFD by 1.75 mm |
 | 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 hole | Goes in the case bosses. The thread is in the insert, so no nuts are needed |
-| 4 | Ø8 self-adhesive rubber bumper, 2–3 mm tall | Sits in the recesses under the lip |
-
-**Assembly:**
-1. Push the inserts into the bosses with a soldering iron.
-2. Stack the acrylic, spacers and PCB.
-3. Drop the stack into the front of the case and fit the 4 bolts.
+| 4 | Ø8 self-adhesive rubber bumper, 2–3 mm tall | Sits in the recesses: two under the front, two under the back lip |
 
 ## Case
 - **Walls:** 2.4 mm.
