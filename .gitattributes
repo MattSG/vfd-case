@@ -1,4 +1,5 @@
 *.step binary
 *.3mf binary
 *.glb binary
+*.stl binary
 *.sc binary

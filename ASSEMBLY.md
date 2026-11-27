@@ -1,71 +1,78 @@
-# VFD clock case: assembly guide
+# Assembly guide
+
+About 20 minutes once the parts are printed. See the [README](README.md) for the shopping list and print settings.
+
+**Tools:** a soldering iron (an insert tip helps), a 2 mm hex key, and tweezers or pliers for pulling support material.
 
 ![Exploded view](guide/exploded.png)
 
-## Parts
+## 0. Clean up the print
 
-**Print** (files in `print/`)
-| File | Part | Suggested settings |
-|---|---|---|
-| `case.3mf` | Case | PLA or PETG, 0.2 mm layers, 4 walls, 20 % infill. Print standing on its base as exported. The front opening and USB notch need no supports, but enable supports for the button recess under the top wall. |
-| `button-cap.3mf` | Button cap | Print upright with a brim and supports under the flange. It's tiny, so 0.12 mm layers give a smoother fit. |
+Pull the support material out of the front opening. Check that these are clear:
+- the 4 insert holes;
+- the round button hole in the top, plus the D-shaped recess underneath it;
+- the USB-C slot at the back.
 
-**Buy**
-| Qty | Part | Notes |
-|---|---|---|
-| 4 | M3 × 16 button-head bolt, black (ISO 7380) | |
-| 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 mm hole | For example Ruthex RX-M3x5.7 |
-| 4 | M3 round spacer, 8 mm long, outside diameter ≤ 6 mm, unthreaded | Nylon is fine |
-| 4 | Ø6 × 2 mm self-adhesive rubber bumper | The common small round size, sold in big sheets |
-| 1 | USB-C cable | |
+Drop the button cap into its hole from the top to test the fit. It should slide freely with a little play. If it binds, turn a 7.8 mm drill bit through the hole by hand, or sand the cap lightly.
 
-You also need the clock PCB and the 1.8 mm tinted acrylic front panel that came with it.
+## 1. Heat-set inserts
 
-**Tools:** a soldering iron (with an insert tip if you have one) and a 2 mm hex key.
-
-## Steps
-
-### 1. Heat-set inserts
 ![Step 1](guide/step-1-inserts.png)
 
-Heat the iron to about 220 °C for PLA (245 °C for PETG). Press an insert into each of the four bosses inside the case, from the front. Keep it square and stop when it's flush with the boss face. Let them cool.
+Set the iron to about 220 °C for PLA or 245 °C for PETG.
+1. Rest an insert on a boss inside the case and press it in slowly and squarely until it's flush with the boss face.
+2. Repeat for all four bosses.
+3. Let them cool before the next step.
 
-### 2. Button cap
+## 2. Button cap
+
 ![Step 2](guide/step-2-button.png)
 
-From inside the case, push the button cap up through the hole in the top, dished end first. Its flange sits in the recess under the top wall, and the cap can't come out once the PCB is in. Check that it slides freely. If it binds, run a 7.8 mm drill through the hole by hand. The cap has a flat on one side of its hidden flange; turn it so the flat faces the nearby corner boss.
+1. From inside the case, push the cap up through the hole in the top, dished end first.
+2. Its flange sits in the recess under the top wall. Turn the cap so the flat edge of the flange faces the nearby corner boss, and it drops fully home.
+3. Once the PCB is fitted, the cap can't fall out.
 
-### 3. PCB
+## 3. PCB
+
 ![Step 3](guide/step-3-pcb.png)
 
-Slide the PCB into the pocket with the VFD facing out and the USB-C port at the bottom left when seen from the front. The back of the board rests on the four bosses, the USB-C port lines up with the cutout in the back, and the board's button sits under the cap.
+Slide the PCB into the opening with the VFD facing out. The USB-C port goes at the back, lower left as seen from the front.
+- The back of the board sits on the four inserts.
+- The port lines up with the slot in the back.
+- The board's button sits under the cap.
 
-### 4. Spacers
+## 4. Spacers
+
 ![Step 4](guide/step-4-spacers.png)
 
-Put an 8 mm spacer over each mounting hole on the front of the PCB.
+Put an 8 mm spacer over each of the four corner holes on the front of the PCB.
 
-### 5. Acrylic front
+## 5. Acrylic front
+
 ![Step 5](guide/step-5-acrylic.png)
 
-Lay the acrylic on the spacers, lining up its holes. Peel the protective film first. The acrylic sits flush with the front of the case.
+Peel the protective film off the acrylic. Lay it on the spacers with its holes lined up. It sits flush with the front of the case.
 
-### 6. Bolts
+## 6. Screws
+
 ![Step 6](guide/step-6-bolts.png)
 
-Fit an M3 × 16 bolt through each corner, through the acrylic, spacer and PCB and into the insert. Tighten gently in a cross pattern. Stop when the acrylic is snug, or it can crack.
+Fit an M3 × 16 screw through each corner, through the acrylic, spacer and PCB and into the insert.
+- Tighten in a cross pattern until the acrylic is just snug. Overtightening cracks acrylic.
+- Press the button cap. You should feel the board's button click.
 
-### 7. Rubber feet
+## 7. Rubber feet
+
 ![Step 7](guide/step-7-feet.png)
 
-Stick a bumper into the recess in each corner of the base.
+Stick a Ø6 mm bumper into the shallow recess in each corner underneath.
 
-### 8. Cable
+## 8. Cable
+
 ![Step 8](guide/step-8-cable.png)
 
 Plug the USB-C cable in at the back. The plug drops into the notch in the curved back, and the cable runs out across the lip.
 
 ## Done
-![Assembled](guide/assembled.png)
 
-Press the cap on top to use the clock's button.
+![Rendered from the back](guide/render-back.png)

@@ -1,47 +1,65 @@
-# vfd-case
+# VFD clock desk case
 
-A desk case for the VFD clock, modelled in SolidCraft. The face tilts back 15° toward the viewer.
+A 3D-printable desk stand for a 93.8 × 28.8 mm VFD clock PCB and its tinted acrylic front. The face tilts back 15° toward you, a curved back lip stops it tipping, the USB-C cable runs out the back, and there's a press-button on top.
 
-![Assembled](guide/assembled.png)
+![Rendered case](guide/render-front.png)
 
-**Build it:** see [ASSEMBLY.md](ASSEMBLY.md) for parts, print settings and the illustrated step-by-step guide.
+**3D preview:** GitHub opens STL files in an interactive viewer. Click [the full assembly](preview/vfd-case-assembled.stl) or [just the printed case](preview/case.stl), then drag to rotate. (GitHub can't embed the viewer inside a README.)
+
+## 1. Buy
+
+| Qty | Part | Notes |
+|---|---|---|
+| 4 | M3 × 16 button-head screw, black (ISO 7380) | 2 mm hex key |
+| 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 mm hole | e.g. Ruthex RX-M3x5.7 |
+| 4 | M3 round spacer, 8 mm long, unthreaded, OD 5 mm (6 mm max) | Nylon is fine |
+| 4 | Ø6 × 2 mm self-adhesive rubber bumper | The common small round size |
+| 1 | USB-C cable | |
+
+You also need the clock PCB and the 1.8 mm acrylic front panel that came with it. No nuts are needed, because the inserts take the thread.
+
+## 2. Print
+
+Both files are already oriented for printing. Open them in your slicer as they are.
+
+| File | Material | Settings |
+|---|---|---|
+| [`print/case.3mf`](print/case.3mf) | PLA or PETG | 0.2 mm layers, 3–4 walls, 15–20 % infill. **Supports:** on, set to *everywhere*, tree or organic. They're only needed under the roof of the front opening, and they come out through the front. |
+| [`print/button-cap.3mf`](print/button-cap.3mf) | Same | 0.12 mm layers. No supports. It prints standing on its dished top. Add a brim if your bed is fussy. |
+
+**Print the cap first**, since it's tiny. Once the case is done, check that the cap slides freely in the case's button hole. If it binds, see the fix in the assembly guide.
+
+## 3. Assemble
+
+The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short:
+
+1. Melt the 4 inserts into the bosses inside the case, using a soldering iron at about 220 °C.
+2. Drop the button cap in from inside. Its flat side faces the nearby corner boss.
+3. Seat the PCB, VFD forward, with the USB-C port at the back lower left.
+4. Put a spacer on each corner hole, then lay the acrylic on top.
+5. Fit the 4 screws through the acrylic, spacers and PCB into the inserts. Snug, not tight.
+6. Stick a rubber foot in each corner recess underneath. Plug in the cable.
+
+![Exploded view](guide/exploded.png)
+
+## Design notes
+
+- **Fits and clearances:** these allow for FDM tolerance and were checked in CAD with an interference check across every part.
+  - PCB and acrylic pocket: 0.4 mm each side.
+  - USB-C cutout: 0.5 mm each side.
+  - Button cap in its bore: 0.3 mm each side.
+  - Hidden button flange: at least 0.4 mm all round. It is D-shaped so it stays clear of the top-left insert boss and can't spin.
+- **Insert holes:** 7 mm deep for 5.7 mm inserts, so displaced plastic has somewhere to go.
+- **Edges:** every exterior edge is rounded at 2 mm. The 10 mm curve at the back is the one exception.
+- **Cable clearance:** with the feet fitted, the USB-C plug clears the desk by 2.2 mm.
+
+## Files
 
 | Path | What |
 |---|---|
-| `print/case.3mf`, `print/button-cap.3mf` | The two printed parts |
-| `export/vfd-case-assembly.step` | The full assembly for other CAD tools |
-| `export/vfd-case-assembly.glb` | The full assembly with colours, for viewers |
-| `guide/` | Assembly renders |
-| `vfd-case.sc` | The SolidCraft design, with components and explode views |
-| `pcb.json` | Script for the PCB reference model |
-| `case.json` | Script for the case, acrylic, spacers, hardware and plug. It also applies the tilt and colours |
-| `assembly.json` | Groups the bodies into components and creates the explode views (`Exploded` and `Step 1`–`Step 8`) |
-
-**Rebuild:** run `pcb.json`, then `case.json`, then `assembly.json` into a new design. For example, with three MCP `batch` calls using `path`. Then re-export with `export` and re-render the guide.
-
-## Hardware (all standard metric)
-| Qty | Part | Notes |
-|---|---|---|
-| 4 | M3 × 16 button-head bolt (ISO 7380) | Goes from the front through the acrylic, spacer and PCB into the insert |
-| 4 | M3 round spacer, 8 mm long, OD ≤ 6 mm, unthreaded | Sits between the acrylic and the PCB, clearing the VFD by 1.75 mm |
-| 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 hole | Goes in the case bosses. The thread is in the insert, so no nuts are needed |
-| 4 | Ø6 × 2 mm self-adhesive rubber bumper (the common small round size) | Sits in a 0.7 mm recess in each corner of the base |
-
-## Case
-- **Walls:** 2.4 mm. Every exterior edge is rounded at R2: the front perimeter (rounding back from the face), all four front-view corners, the bottom edges and the lip. The 10 mm back cove is the one deliberate exception.
-- **Front:** a PCB-shaped pocket with 0.3 mm clearance and 2.42 mm corner radius. The acrylic sits flush with the front face.
-- **Back:** the USB-C port sits flush with the back face, through a 9.54 × 3.86 mm cutout.
-- **Button:** a single Ø7 push-cap that stands vertical, with a level top and a 0.4 mm dish. It comes straight out of a Ø7.6 bore (0.3 mm a side, for print tolerance) in the sloped top, with no collar. It stands 0.5 mm proud at the front and 2.4 mm at the back. Inside, a hidden flange tilted parallel to the wall sits in a recess under the top. The flange and recess are D-shaped, flat on the side next to the top-left boss, so the recess never cuts the boss: 0.55 mm boss clearance, 0.4 mm flange-to-flat and 0.5 mm all round. The flange keeps the cap from falling out, and its flat keys against the recess flat so the cap can only turn about ±9°. Drop it in from inside before fitting the PCB. Nothing flexes.
-- **Base:** the body sits straight on the desk at a 15° tilt, with a full-width wedge under the front. A curved cove at the back runs into a 5 mm lip that extends 22 mm back to stop it tipping. A 14 mm notch through the cove and lip gives the USB-C plug room. There are 4 recesses for Ø6 × 2 mm rubber feet, one in each corner. They clear the R2 edges and the USB notch, and the plug clears the desk by 2.2 mm.
-
-## Coordinates (PCB frame, before tilt; mm)
-- Z is up and the front (VFD side) faces −Y.
-- The PCB's front face sits at y = 0.
-- The PCB's bottom-left corner, seen from the front, is at the origin.
-
-**Measurements:**
-- PCB: 93.8 × 28.8 × 1.6, corner radius 2.12 (a 3 mm caliper chord ÷ √2).
-- VFD: 6.25 deep.
-- Pins: stick out 2.7, 3.75 tall.
-- USB-C: standard 8.94 × 3.26, 10.65 deep.
-- Button casing: 4.65 × 2.6, standing 2 off the back of the PCB, with its top edge 0.42 below the PCB's top edge. Its plunger is 1.95 × 0.95 and points up (+Z).
+| `print/` | The print files: case and button cap |
+| `preview/` | Lighter STL meshes for GitHub's 3D viewer. These are not for printing |
+| `export/vfd-case-assembly.step` / `.glb` | The full assembly, for other CAD tools or 3D viewers |
+| `guide/` | Renders and assembly-step images |
+| `vfd-case.sc` | The SolidCraft design, with components and explode views (`Exploded`, `Step 1`–`Step 8`) |
+| `pcb.json`, `case.json`, `assembly.json` | Scripts that rebuild the design from scratch, in that order. Run each with a SolidCraft MCP `batch` call using `path` |

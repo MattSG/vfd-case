@@ -211,17 +211,17 @@
     "command": "solid.box",
     "params": {
       "width": 19.75,
-      "height": 29.4,
+      "height": 29.6,
       "name": "Pocket",
       "operation": "cut",
       "targets": [
         "Case"
       ],
-      "length": 94.4,
+      "length": 94.6,
       "corner": [
-        -0.3,
+        -0.4,
         -9.9,
-        -0.3
+        -0.4
       ]
     }
   },
@@ -231,28 +231,28 @@
       "tangent_chain": false,
       "edges": [
         [
-          -0.3,
+          -0.4,
           0,
-          -0.3
+          -0.4
         ],
         [
-          94.1,
+          94.2,
           0,
-          -0.3
+          -0.4
         ],
         [
-          -0.3,
+          -0.4,
           0,
-          29.1
+          29.2
         ],
         [
-          94.1,
+          94.2,
           0,
-          29.1
+          29.2
         ]
       ],
       "body": "Case",
-      "radius": 2.42,
+      "radius": 2.52,
       "name": "Pocket corners"
     }
   },
@@ -341,7 +341,7 @@
         2.76
       ],
       "name": "Insert hole M3",
-      "depth": 6.0
+      "depth": 7.0
     }
   },
   {
@@ -357,7 +357,7 @@
         2.76
       ],
       "name": "Insert hole M3",
-      "depth": 6.0
+      "depth": 7.0
     }
   },
   {
@@ -373,7 +373,7 @@
         25.9
       ],
       "name": "Insert hole M3",
-      "depth": 6.0
+      "depth": 7.0
     }
   },
   {
@@ -389,51 +389,51 @@
         25.9
       ],
       "name": "Insert hole M3",
-      "depth": 6.0
+      "depth": 7.0
     }
   },
   {
     "command": "solid.box",
     "params": {
       "width": 4,
-      "height": 3.86,
+      "height": 4.26,
       "name": "USB-C cutout",
       "operation": "cut",
       "targets": [
         "Case"
       ],
-      "length": 9.54,
+      "length": 9.94,
       "corner": [
-        10.26,
+        10.06,
         9.0,
-        3.1
+        2.9
       ]
     }
   },
   {
     "command": "solid.fillet",
     "params": {
-      "radius": 1.9,
+      "radius": 2.1,
       "edges": [
         [
-          10.26,
+          10.06,
           11.0,
-          3.1
+          2.9
         ],
         [
-          19.8,
+          20.0,
           11.0,
-          3.1
+          2.9
         ],
         [
-          10.26,
+          10.06,
           11.0,
-          6.96
+          7.16
         ],
         [
-          19.8,
+          20.0,
           11.0,
-          6.96
+          7.16
         ]
       ],
       "body": "Case",
@@ -839,7 +839,7 @@
     "params": {
       "diameter": 10,
       "body_name": "Recess tool",
-      "height": 1.4,
+      "height": 1.5,
       "base": [
         9.225,
         2.6,
@@ -893,7 +893,7 @@
         -4.4,
         29.4
       ],
-      "height": 0.8
+      "height": 0.6
     }
   },
   {
@@ -1014,7 +1014,7 @@
     "command": "solid.fillet",
     "params": {
       "body": "Button pin",
-      "radius": 0.5,
+      "radius": 0.4,
       "name": "Button cap edge",
       "edges": [
         [
@@ -1034,7 +1034,7 @@
       "center": [
         9.225,
         11.227,
-        44.0
+        44.1
       ],
       "targets": [
         "Button pin"
