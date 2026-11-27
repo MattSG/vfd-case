@@ -33,7 +33,7 @@ Heat the iron to about 220 °C for PLA (245 °C for PETG). Press an insert into 
 ### 2. Button cap
 ![Step 2](guide/step-2-button.png)
 
-From inside the case, push the button cap up through the hole in the top, dished end first. Its flange sits in the recess under the top wall, and the cap can't come out once the PCB is in. Check that it slides freely. If it binds, run a 7.5 mm drill through the hole by hand.
+From inside the case, push the button cap up through the hole in the top, dished end first. Its flange sits in the recess under the top wall, and the cap can't come out once the PCB is in. Check that it slides freely. If it binds, run a 7.8 mm drill through the hole by hand. The cap has a flat on one side of its hidden flange; turn it so the flat faces the nearby corner boss.
 
 ### 3. PCB
 ![Step 3](guide/step-3-pcb.png)

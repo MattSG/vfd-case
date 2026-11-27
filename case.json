@@ -836,22 +836,49 @@
     }
   },
   {
-    "command": "solid.cylinder",
     "params": {
-      "axis": "Z",
       "diameter": 10,
-      "name": "Button recess",
-      "operation": "cut",
-      "targets": [
-        "Case"
-      ],
+      "body_name": "Recess tool",
+      "height": 1.4,
       "base": [
         9.225,
         2.6,
         28.9
       ],
-      "height": 1.4
-    }
+      "name": "Recess tool",
+      "operation": "new",
+      "axis": "Z"
+    },
+    "command": "solid.cylinder"
+  },
+  {
+    "params": {
+      "width": 12,
+      "corner": [
+        5.6,
+        -3.4,
+        28.8
+      ],
+      "height": 1.6,
+      "targets": [
+        "Recess tool"
+      ],
+      "name": "Recess trim",
+      "operation": "intersect",
+      "length": 14.4
+    },
+    "command": "solid.box"
+  },
+  {
+    "params": {
+      "operation": "cut",
+      "name": "Button recess",
+      "tools": [
+        "Recess tool"
+      ],
+      "target": "Case"
+    },
+    "command": "solid.combine"
   },
   {
     "command": "solid.box",
@@ -860,9 +887,9 @@
       "body_name": "Flange slab tool",
       "name": "Flange slab tool",
       "operation": "new",
-      "length": 14,
+      "length": 10.225,
       "corner": [
-        2.225,
+        6.0,
         -4.4,
         29.4
       ],
@@ -935,7 +962,7 @@
     "command": "solid.cylinder",
     "params": {
       "axis": "Z",
-      "diameter": 7.4,
+      "diameter": 7.6,
       "name": "Button bore",
       "operation": "cut",
       "targets": [
