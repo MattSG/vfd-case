@@ -58,7 +58,7 @@ Fit an M3 × 16 bolt through each corner, through the acrylic, spacer and PCB an
 ### 7. Rubber feet
 ![Step 7](guide/step-7-feet.png)
 
-Stick a bumper into each of the four recesses: two under the front and two under the back lip.
+Stick a bumper into each of the four recesses: two under the front and two under the back lip, either side of the cable notch.
 
 ### 8. Cable
 ![Step 8](guide/step-8-cable.png)
