@@ -128,12 +128,12 @@
       "body_name": "VFD pins left",
       "corner": [
         12.92,
-        -2.85,
+        -2.7,
         23.04
       ],
       "length": 3.37,
       "operation": "new",
-      "width": 2.85,
+      "width": 2.7,
       "height": 3.75
     }
   },
@@ -144,12 +144,12 @@
       "body_name": "VFD pins main",
       "corner": [
         18.37,
-        -2.85,
+        -2.7,
         23.04
       ],
       "length": 56.64,
       "operation": "new",
-      "width": 2.85,
+      "width": 2.7,
       "height": 3.75
     }
   },
@@ -160,12 +160,12 @@
       "body_name": "VFD pins right",
       "corner": [
         77.79,
-        -2.85,
+        -2.7,
         23.04
       ],
       "length": 3.66,
       "operation": "new",
-      "width": 2.85,
+      "width": 2.7,
       "height": 3.75
     }
   },
