@@ -1,0 +1,219 @@
+[
+  {
+    "command": "solid.box",
+    "params": {
+      "name": "PCB",
+      "body_name": "PCB",
+      "corner": [
+        0,
+        0,
+        0
+      ],
+      "length": 93.8,
+      "width": 1.6,
+      "height": 28.8
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "edges": [
+        [
+          0,
+          0.8,
+          0
+        ],
+        [
+          93.8,
+          0.8,
+          0
+        ],
+        [
+          0,
+          0.8,
+          28.8
+        ],
+        [
+          93.8,
+          0.8,
+          28.8
+        ]
+      ],
+      "body": "PCB",
+      "name": "PCB corners",
+      "radius": 1.75,
+      "tangent_chain": false
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "targets": [
+        "PCB"
+      ],
+      "name": "Mount hole",
+      "diameter": 3,
+      "position": [
+        3.1,
+        0,
+        2.76
+      ]
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "targets": [
+        "PCB"
+      ],
+      "name": "Mount hole",
+      "diameter": 3,
+      "position": [
+        90.7,
+        0,
+        2.76
+      ]
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "targets": [
+        "PCB"
+      ],
+      "name": "Mount hole",
+      "diameter": 3,
+      "position": [
+        3.1,
+        0,
+        25.9
+      ]
+    }
+  },
+  {
+    "command": "solid.hole",
+    "params": {
+      "targets": [
+        "PCB"
+      ],
+      "name": "Mount hole",
+      "diameter": 3,
+      "position": [
+        90.7,
+        0,
+        25.9
+      ]
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "name": "VFD",
+      "body_name": "VFD",
+      "corner": [
+        6.82,
+        -6.25,
+        6.86
+      ],
+      "length": 80.58,
+      "operation": "new",
+      "width": 6.25,
+      "height": 16.18
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "name": "VFD pins left",
+      "body_name": "VFD pins left",
+      "corner": [
+        12.92,
+        -2.85,
+        23.04
+      ],
+      "length": 3.37,
+      "operation": "new",
+      "width": 2.85,
+      "height": 3.75
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "name": "VFD pins main",
+      "body_name": "VFD pins main",
+      "corner": [
+        18.37,
+        -2.85,
+        23.04
+      ],
+      "length": 56.64,
+      "operation": "new",
+      "width": 2.85,
+      "height": 3.75
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "name": "VFD pins right",
+      "body_name": "VFD pins right",
+      "corner": [
+        77.79,
+        -2.85,
+        23.04
+      ],
+      "length": 3.66,
+      "operation": "new",
+      "width": 2.85,
+      "height": 3.75
+    }
+  },
+  {
+    "command": "solid.box",
+    "params": {
+      "name": "USB-C",
+      "body_name": "USB-C",
+      "corner": [
+        10.56,
+        1.6,
+        3.4
+      ],
+      "length": 8.94,
+      "operation": "new",
+      "width": 10.65,
+      "height": 3.26
+    }
+  },
+  {
+    "command": "solid.fillet",
+    "params": {
+      "edges": [
+        [
+          10.56,
+          6.925,
+          3.4
+        ],
+        [
+          19.5,
+          6.925,
+          3.4
+        ],
+        [
+          10.56,
+          6.925,
+          6.66
+        ],
+        [
+          19.5,
+          6.925,
+          6.66
+        ]
+      ],
+      "body": "USB-C",
+      "name": "USB-C rounding",
+      "radius": 1.6,
+      "tangent_chain": false
+    }
+  }
+]
