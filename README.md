@@ -63,7 +63,7 @@ The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short
 | `preview/` | Lighter STL meshes for GitHub's 3D viewer. These are not for printing |
 | `export/vfd-case-assembly.step` / `.glb` | The full assembly, for other CAD tools or 3D viewers |
 | `guide/` | Renders and assembly-step images |
-| `guide/pcb-drawing.pdf` / `.png` | Dimensioned drawing of the PCB on its own (front, back, side) |
+| `guide/pcb-drawing.pdf` | Dimensioned drawing of the PCB on its own, 2 sheets (also as `pcb-drawing-front.png` / `-back.png`) |
 | `pcb.sc` | The PCB on its own, flat, with that drawing |
 | `vfd-case.sc` | The SolidCraft design, with components and explode views (`Exploded`, `Step 1`–`Step 8`) |
 | `pcb.json`, `case.json`, `assembly.json` | Scripts that rebuild the design from scratch, in that order. Run each with a SolidCraft MCP `batch` call using `path` |
