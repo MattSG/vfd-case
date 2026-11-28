@@ -47,7 +47,7 @@ The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short
 
 - **Fits and clearances:** these allow for FDM tolerance and were checked in CAD with an interference check across every part.
   - PCB and acrylic pocket: 0.4 mm each side.
-  - USB-C cutout: 0.5 mm each side.
+  - USB-C cutout: 0.75 mm each side around the port (a standard vertical SMD USB-C, 8.94 × 3.26), to allow for hand-measured position.
   - Button cap in its bore: 0.3 mm each side.
   - Button cap: retained by a hidden 0.8 mm D-shaped flange, round except for a flat that clears the top-left insert boss. It sits in a matching pocket under the top wall, so the cap can lift about 0.35 mm before the flange catches, whichever way it's pushed. The cap's underside is one flat face, parallel to the board, so it prints without supports and the board's button slides under it.
 - **Assembly checked as motion, not just the final position.** Each part was swept along its real path and checked for collisions at every step. The cap clears the boss on the way in. The board's button clears the case as the PCB slides in: it passes the front edge with the board pressed to the bottom of the opening (0.2 mm clear), then runs in a 3 mm groove in the ceiling. The groove stops behind the acrylic, so the face is untouched. Pressing the cap reaches the board's button after 0.2 mm.
