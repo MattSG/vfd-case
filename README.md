@@ -35,7 +35,7 @@ The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short
 
 1. Melt the 4 inserts into the bosses inside the case, using a soldering iron at about 220 °C.
 2. Push the button cap up into its hole from inside. Its tab goes toward the middle of the case.
-3. Seat the PCB, VFD forward, with the USB-C port at the back lower left.
+3. Seat the PCB, VFD forward, with the USB-C port at the back lower left. Press it to the bottom of the opening as it starts in.
 4. Put a spacer on each corner hole, then lay the acrylic on top.
 5. Fit the 4 screws through the acrylic, spacers and PCB into the inserts. Snug, not tight.
 6. Stick a rubber foot in each corner recess underneath. Plug in the cable.
@@ -49,7 +49,7 @@ The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short
   - USB-C cutout: 0.5 mm each side.
   - Button cap in its bore: 0.3 mm each side.
   - Button cap: retained by a hidden tab on the side away from the top-left insert boss. The tab sits in a keyed pocket, so the cap lifts at most 0.4 mm and turns at most about 5°.
-- **Assembly checked as motion, not just the final position.** Each part was swept along its real path and checked for collisions at every step. The cap clears the boss on the way in. The board's button clears the case as the PCB slides in, using a 3 mm guide groove in the ceiling of the front opening. The cap's stem is squared to the board, and pressing the cap reaches the board's button.
+- **Assembly checked as motion, not just the final position.** Each part was swept along its real path and checked for collisions at every step. The cap clears the boss on the way in. The board's button clears the case as the PCB slides in: it passes the front edge with the board pressed to the bottom of the opening (0.2 mm clear), then runs in a 3 mm groove in the ceiling. The groove stops behind the acrylic, so the face is untouched. The cap's stem is squared to the board, and pressing the cap reaches the board's button.
 - **Insert holes:** 7 mm deep for 5.7 mm inserts, so displaced plastic has somewhere to go.
 - **Edges:** every exterior edge is rounded at 2 mm. The 10 mm curve at the back is the one exception.
 - **Cable clearance:** with the feet fitted, the USB-C plug clears the desk by 2.2 mm.

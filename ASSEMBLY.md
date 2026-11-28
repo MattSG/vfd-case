@@ -10,7 +10,7 @@ About 20 minutes once the parts are printed. See the [README](README.md) for the
 
 Pull the support material out of the front opening. Check that these are clear:
 - the 4 insert holes;
-- the round button hole in the top, the tab pocket under it, and the shallow groove in the ceiling of the front opening (it guides the board's button in);
+- the round button hole in the top, the tab pocket under it, and the shallow groove in the ceiling of the front opening, just behind the front edge (it guides the board's button in);
 - the USB-C slot at the back.
 
 Test the button cap: push its round body into the hole from the top. It stops at the tab. It should slide freely with a little play. If it binds, turn a 7.8 mm drill bit through the hole by hand, or sand the cap lightly.
@@ -36,7 +36,7 @@ Set the iron to about 220 °C for PLA or 245 °C for PETG.
 
 ![Step 3](guide/step-3-pcb.png)
 
-Slide the PCB straight into the opening with the VFD facing out. Keep it square. The board's button runs along a groove in the ceiling of the opening. The USB-C port goes at the back, lower left as seen from the front.
+Slide the PCB straight into the opening with the VFD facing out. Keep it square, and **press it against the bottom of the opening for the first few millimetres**: the board's button only just clears the top edge of the opening that way. Once it's past, it runs in a hidden groove in the ceiling. The USB-C port goes at the back, lower left as seen from the front.
 - The back of the board sits on the four inserts.
 - The port lines up with the slot in the back.
 - The board's button sits under the cap.
