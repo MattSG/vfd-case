@@ -25,7 +25,7 @@ Both files are already oriented for printing. Open them in your slicer as they a
 | File | Material | Settings |
 |---|---|---|
 | [`print/case.3mf`](print/case.3mf) | PLA or PETG | 0.2 mm layers, 3–4 walls, 15–20 % infill. **Supports:** on, set to *everywhere*, tree or organic. They're only needed under the roof of the front opening, and they come out through the front. |
-| [`print/button-cap.3mf`](print/button-cap.3mf) | Same | 0.12 mm layers. No supports. It prints standing on its dished top. Add a brim if your bed is fussy. |
+| [`print/button-cap.3mf`](print/button-cap.3mf) | Same | 0.12 mm layers. No supports. It prints standing on its flat underside (tab included), leaning 15° — that's intended. Add a brim if your bed is fussy. |
 
 **Print the cap first**, since it's tiny. Once the case is done, check that the cap slides freely in the case's button hole. If it binds, see the fix in the assembly guide.
 
@@ -48,8 +48,8 @@ The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short
   - PCB and acrylic pocket: 0.4 mm each side.
   - USB-C cutout: 0.5 mm each side.
   - Button cap in its bore: 0.3 mm each side.
-  - Button cap: retained by a hidden tab on the side away from the top-left insert boss. The tab sits in a keyed pocket, so the cap lifts at most 0.4 mm and turns at most about 5°.
-- **Assembly checked as motion, not just the final position.** Each part was swept along its real path and checked for collisions at every step. The cap clears the boss on the way in. The board's button clears the case as the PCB slides in: it passes the front edge with the board pressed to the bottom of the opening (0.2 mm clear), then runs in a 3 mm groove in the ceiling. The groove stops behind the acrylic, so the face is untouched. The cap's stem is squared to the board, and pressing the cap reaches the board's button.
+  - Button cap: retained by a hidden tab on the side away from the top-left insert boss. The 0.8 mm tab sits in a keyed pocket, so the cap lifts less than 0.3 mm and turns at most about 5°. The cap's underside is one flat face, parallel to the board, so it prints without supports and the board's button slides under it.
+- **Assembly checked as motion, not just the final position.** Each part was swept along its real path and checked for collisions at every step. The cap clears the boss on the way in. The board's button clears the case as the PCB slides in: it passes the front edge with the board pressed to the bottom of the opening (0.2 mm clear), then runs in a 3 mm groove in the ceiling. The groove stops behind the acrylic, so the face is untouched. Pressing the cap reaches the board's button after 0.2 mm.
 - **Insert holes:** 7 mm deep for 5.7 mm inserts, so displaced plastic has somewhere to go.
 - **Edges:** every exterior edge is rounded at 2 mm. The 10 mm curve at the back is the one exception.
 - **Cable clearance:** with the feet fitted, the USB-C plug clears the desk by 2.2 mm.
