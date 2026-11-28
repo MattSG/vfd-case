@@ -12,7 +12,7 @@ A 3D-printable desk stand for a 93.8 × 28.8 mm VFD clock PCB and its tinted acr
 |---|---|---|
 | 4 | M3 × 16 button-head screw, black (ISO 7380) | 2 mm hex key |
 | 4 | M3 heat-set insert, 5.7 mm long, for a Ø4.0 mm hole | e.g. Ruthex RX-M3x5.7 |
-| 4 | M3 round spacer, 8 mm long, unthreaded, OD 5 mm (6 mm max) | Nylon is fine |
+| 4 | M3 round spacer, 8 mm long, unthreaded, OD 5 mm (6 mm max) | Nylon is fine, or print them: [`print/spacer.3mf`](print/spacer.3mf) |
 | 4 | Ø6 × 2 mm self-adhesive rubber bumper | The common small round size |
 | 1 | USB-C cable | |
 
@@ -26,6 +26,7 @@ Both files are already oriented for printing. Open them in your slicer as they a
 |---|---|---|
 | [`print/case.3mf`](print/case.3mf) | PLA or PETG | 0.2 mm layers, 3–4 walls, 15–20 % infill. **Supports:** on, set to *everywhere*, tree or organic. They're only needed under the roof of the front opening, and they come out through the front. |
 | [`print/button-cap.3mf`](print/button-cap.3mf) | Same | 0.12 mm layers. No supports. It prints standing on its flat underside (tab included), leaning 15° — that's intended. Add a brim if your bed is fussy. |
+| [`print/spacer.3mf`](print/spacer.3mf) (optional, print 4) | Same | Ø6 × 8 mm tube with a Ø3.2 mm bore, standing upright. 0.12 mm layers, 100 % infill, no supports. Only if you're not buying spacers: the length sets where the acrylic sits, so check they're 8.0 mm. |
 
 **Print the cap first**, since it's tiny. Once the case is done, check that the cap slides freely in the case's button hole. If it binds, see the fix in the assembly guide.
 
@@ -58,7 +59,7 @@ The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short
 
 | Path | What |
 |---|---|
-| `print/` | The print files: case and button cap |
+| `print/` | The print files: case, button cap and optional spacer |
 | `preview/` | Lighter STL meshes for GitHub's 3D viewer. These are not for printing |
 | `export/vfd-case-assembly.step` / `.glb` | The full assembly, for other CAD tools or 3D viewers |
 | `guide/` | Renders and assembly-step images |
