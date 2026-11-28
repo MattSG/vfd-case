@@ -10,10 +10,10 @@ About 20 minutes once the parts are printed. See the [README](README.md) for the
 
 Pull the support material out of the front opening. Check that these are clear:
 - the 4 insert holes;
-- the round button hole in the top, the tab pocket under it, and the shallow groove in the ceiling of the front opening, just behind the front edge (it guides the board's button in);
+- the round button hole in the top, the flange pocket under it, and the shallow groove in the ceiling of the front opening, just behind the front edge (it guides the board's button in);
 - the USB-C slot at the back.
 
-Test the button cap: push its round body into the hole from the top. It stops at the tab. It should slide freely with a little play. If it binds, turn a 7.8 mm drill bit through the hole by hand, or sand the cap lightly.
+Test the button cap: push its round body into the hole from the top. It stops at the flange. It should slide freely with a little play. If it binds, turn a 7.8 mm drill bit through the hole by hand, or sand the cap lightly.
 
 ## 1. Heat-set inserts
 
@@ -29,7 +29,7 @@ Set the iron to about 220 °C for PLA or 245 °C for PETG.
 ![Step 2](guide/step-2-button.png)
 
 1. From inside the case, push the cap straight up through the hole in the top, dished end first.
-2. Turn it so its small tab points toward the middle of the case. The tab drops into its pocket under the top wall, which stops the cap turning.
+2. Turn it so the flat side of its flange faces the near (left, from the front) end of the case. The flange drops into its pocket under the top wall, which stops the cap turning.
 3. Once the PCB is fitted, the cap can't fall out.
 
 ## 3. PCB

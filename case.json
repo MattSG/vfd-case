@@ -837,7 +837,7 @@
   },
   {
     "params": {
-      "diameter": 9.6,
+      "diameter": 10.4,
       "body_name": "Recess tool",
       "height": 1.81,
       "base": [
@@ -855,11 +855,11 @@
     "params": {
       "width": 12,
       "corner": [
-        10.9,
+        6.6,
         -3.4,
         28.8
       ],
-      "height": 1.6,
+      "height": 2.0,
       "targets": [
         "Recess tool"
       ],
@@ -889,7 +889,7 @@
       "operation": "new",
       "length": 10,
       "corner": [
-        11.3,
+        7,
         -4.4,
         29.51
       ],

@@ -34,7 +34,7 @@ Both files are already oriented for printing. Open them in your slicer as they a
 The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short:
 
 1. Melt the 4 inserts into the bosses inside the case, using a soldering iron at about 220 °C.
-2. Push the button cap up into its hole from inside. Its tab goes toward the middle of the case.
+2. Push the button cap up into its hole from inside, flat side of its flange toward the near (left) end of the case.
 3. Seat the PCB, VFD forward, with the USB-C port at the back lower left. Press it to the bottom of the opening as it starts in.
 4. Put a spacer on each corner hole, then lay the acrylic on top.
 5. Fit the 4 screws through the acrylic, spacers and PCB into the inserts. Snug, not tight.
@@ -48,7 +48,7 @@ The full illustrated walk-through is in **[ASSEMBLY.md](ASSEMBLY.md)**. In short
   - PCB and acrylic pocket: 0.4 mm each side.
   - USB-C cutout: 0.5 mm each side.
   - Button cap in its bore: 0.3 mm each side.
-  - Button cap: retained by a hidden tab on the side away from the top-left insert boss. The 0.8 mm tab sits in a keyed pocket, so the cap lifts less than 0.3 mm and turns at most about 5°. The cap's underside is one flat face, parallel to the board, so it prints without supports and the board's button slides under it.
+  - Button cap: retained by a hidden 0.8 mm D-shaped flange, round except for a flat that clears the top-left insert boss. It sits in a matching pocket under the top wall, so the cap can lift about 0.35 mm before the flange catches, whichever way it's pushed. The cap's underside is one flat face, parallel to the board, so it prints without supports and the board's button slides under it.
 - **Assembly checked as motion, not just the final position.** Each part was swept along its real path and checked for collisions at every step. The cap clears the boss on the way in. The board's button clears the case as the PCB slides in: it passes the front edge with the board pressed to the bottom of the opening (0.2 mm clear), then runs in a 3 mm groove in the ceiling. The groove stops behind the acrylic, so the face is untouched. Pressing the cap reaches the board's button after 0.2 mm.
 - **Insert holes:** 7 mm deep for 5.7 mm inserts, so displaced plastic has somewhere to go.
 - **Edges:** every exterior edge is rounded at 2 mm. The 10 mm curve at the back is the one exception.
